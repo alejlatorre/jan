@@ -35,6 +35,20 @@ export function KeyboardShortcutsProvider() {
     },
   })
 
+  // Open Model Selector (⌘/Ctrl .)
+  useKeyboardShortcut({
+    key: '.',
+    usePlatformMetaKey: true,
+    callback: () => {
+      const modelSelectorTrigger = document.querySelector(
+        '[data-model-selector-trigger]'
+      )
+      if (modelSelectorTrigger) {
+        ;(modelSelectorTrigger as HTMLElement).click()
+      }
+    },
+  })
+
   // This component doesn't render anything
   return null
 }

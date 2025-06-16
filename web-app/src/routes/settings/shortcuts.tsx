@@ -47,6 +47,17 @@ function Shortcuts() {
                   </div>
                 }
               />
+              <CardItem
+                title="Open Model Selector"
+                description="Open the model selection dropdown"
+                actions={
+                  <div className="flex items-center justify-center px-3 py-1 bg-main-view-fg/5 rounded-md">
+                    <span className="font-medium">
+                      <PlatformMetaKey /> .
+                    </span>
+                  </div>
+                }
+              />
             </Card>
 
             {/* Chat */}

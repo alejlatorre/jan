@@ -263,6 +263,7 @@ const DropdownModelProvider = ({
           <button
             title={displayModel}
             className="font-medium cursor-pointer flex items-center gap-1.5 relative z-20 max-w-38"
+            data-model-selector-trigger
           >
             {provider && (
               <div className="shrink-0">
